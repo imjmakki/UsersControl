@@ -25,7 +25,7 @@ import static java.util.Arrays.*;
 @Component
 public class JWTTokenProvider {
 
-    @Value("${saha.secret}")
+    @Value("${users.secret}")
     private String secret;
 
     public String generateJwtToken(UserPrincipal userPrincipal) {
