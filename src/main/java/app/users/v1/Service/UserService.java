@@ -1,6 +1,7 @@
 package app.users.v1.Service;
 
 import app.users.v1.Domain.User;
+import app.users.v1.Utility.Exception.User.*;
 import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;

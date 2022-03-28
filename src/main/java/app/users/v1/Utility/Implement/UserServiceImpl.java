@@ -2,6 +2,7 @@ package app.users.v1.Utility.Implement;
 
 import app.users.v1.Domain.User;
 import app.users.v1.Service.UserService;
+import app.users.v1.Utility.Exception.User.*;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
