@@ -22,6 +22,5 @@ public class AuthenticationFailureListener {
             String username = (String) event.getAuthentication().getPrincipal();
             loginAttemptService.addUserToLoginAttemptCache(username);
         }
-
     }
 }
