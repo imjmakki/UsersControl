@@ -1,6 +1,7 @@
 package app.users.v1.Utility.Exception;
 
 import app.users.v1.Utility.Config.HttpResponse;
+import app.users.v1.Utility.Exception.File.*;
 import app.users.v1.Utility.Exception.User.*;
 import com.auth0.jwt.exceptions.TokenExpiredException;
 import org.slf4j.Logger;
