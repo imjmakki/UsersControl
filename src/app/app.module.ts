@@ -8,6 +8,7 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { MainComponent } from './layout/main/main.component';
 import { UsersComponent } from './layout/users/users.component';
 import { AddUserComponent } from './layout/add-user/add-user.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddUserComponent } from './layout/add-user/add-user.component';
     AddUserComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
