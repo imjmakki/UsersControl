@@ -11,7 +11,9 @@ import { AddUserComponent } from './layout/add-user/add-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { TableComponent } from './layout/table/table.component';
+//Modules
 import {HttpClientModule} from "@angular/common/http";
+//Material
 
 @NgModule({
   declarations: [
