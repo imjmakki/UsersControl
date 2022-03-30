@@ -33,10 +33,6 @@ export class AuthenticationService {
   }
 
   public saveToken(token: string): void {
-    this.token = null;
-    this.loggedInUsername = null;
     localStorage.removeItem('user');
-    localStorage.removeItem('token');
-    localStorage.removeItem('users');
   }
 }
