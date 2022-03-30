@@ -61,7 +61,7 @@ export class AuthenticationService {
     if(this.token != null && this.token !== '') {
 
     } else {
-
+      this.logOut();
     }
     return ;
   }
