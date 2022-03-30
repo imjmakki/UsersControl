@@ -58,6 +58,7 @@ export class AuthenticationService {
 
   public isLoggedIn(): boolean {
     this.loadToken();
+    if(this.token != null && this.token !== ''){}
     return ;
   }
 }
