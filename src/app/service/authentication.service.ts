@@ -5,7 +5,7 @@ import { environment } from "../../environments/environment";
   providedIn: 'root'
 })
 export class AuthenticationService {
-  private host: string = environment.apiUrl;
+  private host = environment.apiUrl;
 
   constructor() { }
 }
