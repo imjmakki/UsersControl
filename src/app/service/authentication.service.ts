@@ -19,6 +19,6 @@ export class AuthenticationService {
 
   public register(user: User): Observable<User | HttpErrorResponse> {
     return this.http.post<User | HttpErrorResponse>
-    (`${this.host}/user/register`, user, {observe: 'response'});
+    (`${this.host}/user/register`, user);
   }
 }
