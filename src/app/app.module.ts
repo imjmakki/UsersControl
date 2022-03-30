@@ -13,6 +13,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { TableComponent } from './layout/table/table.component';
 //Modules
 import {HttpClientModule} from "@angular/common/http";
+import { AppRoutingModule } from './app-routing.module';
 //Material
 
 @NgModule({
@@ -30,7 +31,8 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
