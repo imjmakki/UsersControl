@@ -47,5 +47,6 @@ export class AuthenticationService {
   }
 
   public loadToken(): void {
+    this.token = localStorage.getItem('token');
   }
 }
