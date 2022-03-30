@@ -10,6 +10,7 @@ import {User} from "../model/user";
 export class AuthenticationService {
   private host = environment.apiUrl;
   private token!: string;
+  private loggedInUsername!: string;
 
   constructor(private http: HttpClient) { }
 
@@ -25,5 +26,6 @@ export class AuthenticationService {
 
   public logOut(): void {
     this.token = null;
+    this.loggedInUsername = null;
   }
 }
