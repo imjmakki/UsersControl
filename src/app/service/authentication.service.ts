@@ -46,7 +46,6 @@ export class AuthenticationService {
     return JSON.parse(localStorage.getItem('user'));
   }
 
-  public loadToken(): User {
-    return JSON.parse(localStorage.getItem('user'));
+  public loadToken(): void {
   }
 }
