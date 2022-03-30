@@ -23,7 +23,5 @@ export class AuthenticationService {
   }
 
   public logOut(): void {
-    return this.http.post<User | HttpErrorResponse>
-    (`${this.host}/user/register`, user);
   }
 }
