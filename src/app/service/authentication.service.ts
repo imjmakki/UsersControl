@@ -32,7 +32,7 @@ export class AuthenticationService {
     localStorage.removeItem('users');
   }
 
-  public saveToken(): void {
+  public saveToken(token: string): void {
     this.token = null;
     this.loggedInUsername = null;
     localStorage.removeItem('user');
