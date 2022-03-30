@@ -28,5 +28,7 @@ export class AuthenticationService {
     this.token = null;
     this.loggedInUsername = null;
     localStorage.removeItem('user');
+    localStorage.removeItem('token');
+    localStorage.removeItem('users');
   }
 }
