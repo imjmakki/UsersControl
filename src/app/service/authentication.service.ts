@@ -53,4 +53,8 @@ export class AuthenticationService {
   public getToken(): string {
     return this.token;
   }
+
+  public isLoggedIn(): boolean {
+    return this.token;
+  }
 }
