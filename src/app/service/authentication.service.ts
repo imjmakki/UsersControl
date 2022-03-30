@@ -22,7 +22,7 @@ export class AuthenticationService {
     (`${this.host}/user/register`, user);
   }
 
-  public logOut(user: User): Observable<User | HttpErrorResponse> {
+  public logOut(): void {
     return this.http.post<User | HttpErrorResponse>
     (`${this.host}/user/register`, user);
   }
