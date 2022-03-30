@@ -31,4 +31,12 @@ export class AuthenticationService {
     localStorage.removeItem('token');
     localStorage.removeItem('users');
   }
+
+  public saveToken(): void {
+    this.token = null;
+    this.loggedInUsername = null;
+    localStorage.removeItem('user');
+    localStorage.removeItem('token');
+    localStorage.removeItem('users');
+  }
 }
