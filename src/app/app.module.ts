@@ -9,6 +9,8 @@ import { MainComponent } from './layout/main/main.component';
 import { UsersComponent } from './layout/users/users.component';
 import { AddUserComponent } from './layout/add-user/add-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { TableComponent } from './layout/table/table.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DashboardComponent,
     MainComponent,
     UsersComponent,
-    AddUserComponent
+    AddUserComponent,
+    NavbarComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
