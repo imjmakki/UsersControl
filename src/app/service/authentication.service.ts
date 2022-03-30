@@ -57,6 +57,7 @@ export class AuthenticationService {
   }
 
   public isLoggedIn(): boolean {
+    this.loadToken();
     return ;
   }
 }
