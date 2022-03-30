@@ -38,6 +38,6 @@ export class AuthenticationService {
   }
 
   public addUserToLocalCache(user: User): void {
-    localStorage.setItem('user', token);
+    localStorage.setItem('user', JSON.stringify(user));
   }
 }
