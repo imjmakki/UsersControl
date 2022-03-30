@@ -59,7 +59,9 @@ export class AuthenticationService {
   public isLoggedIn(): boolean {
     this.loadToken();
     if(this.token != null && this.token !== '') {
+      if(this.jwtHelper.decodeToken(this.token).sub != null || '') {
 
+      }
     } else {
       this.logOut();
       return false;
