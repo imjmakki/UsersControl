@@ -9,8 +9,8 @@ import {User} from "../model/user";
 })
 export class AuthenticationService {
   private host = environment.apiUrl;
-  private token!: string;
-  private loggedInUsername!: string;
+  private token!: any;
+  private loggedInUsername!: any;
 
   constructor(private http: HttpClient) { }
 
