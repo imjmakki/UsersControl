@@ -12,6 +12,7 @@ export class AuthenticationService {
   private host = environment.apiUrl;
   private token!: any;
   private loggedInUsername!: any;
+  private jwtHelper = new JwtHelperService();
 
   constructor(private http: HttpClient) { }
 
