@@ -9,6 +9,7 @@ import {JwtHelperService} from "@auth0/angular-jwt";
   providedIn: 'root'
 })
 export class UserService {
+  private host = environment.apiUrl;
 
   constructor() { }
 }
