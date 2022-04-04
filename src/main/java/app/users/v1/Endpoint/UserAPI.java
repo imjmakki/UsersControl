@@ -58,7 +58,7 @@ public class UserAPI extends ExceptionHandling {
         return new ResponseEntity<>(newUser, OK);
     }
 
-    @PostMapping("/add_user")
+    @PostMapping("/add")
     public ResponseEntity<User> addNewUser(@RequestParam("username") String username,
                                            @RequestParam("email") String email,
                                            @RequestParam("password") String password,
