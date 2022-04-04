@@ -4,9 +4,7 @@ import { environment } from "../../environments/environment";
 import {Observable} from "rxjs";
 import {User} from "../model/user";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class UserService {
   private host = environment.apiUrl;
 
