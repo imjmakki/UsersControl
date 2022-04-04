@@ -24,7 +24,7 @@ export class UserService {
     return this.http.put<User>(`${this.host}/user/update`, formData);
   }
 
-  public resetPassword(email: string): Observable<User | HttpErrorResponse> {
-    return this.http.get<User>(`${this.host}/user/reset/`, email);
+  public resetPassword(email: string): Observable<any | HttpErrorResponse> {
+    return this.http.get(`${this.host}/user/reset/`, email);
   }
 }
