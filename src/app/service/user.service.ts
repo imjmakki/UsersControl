@@ -10,5 +10,5 @@ import {User} from "../model/user";
 export class UserService {
   private host = environment.apiUrl;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 }
