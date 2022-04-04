@@ -27,4 +27,8 @@ export class UserService {
   public resetPassword(email: string): Observable<any | HttpErrorResponse> {
     return this.http.get(`${this.host}/user/reset/${email}`);
   }
+
+  public deleteUser(username: string): Observable<any | HttpErrorResponse> {
+    return this.http.delete<any>(`${this.host}/user/delete/${username}`);
+  }
 }
