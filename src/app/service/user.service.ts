@@ -25,6 +25,6 @@ export class UserService {
   }
 
   public resetPassword(email: string): Observable<any | HttpErrorResponse> {
-    return this.http.get(`${this.host}/user/reset/`, email);
+    return this.http.get(`${this.host}/user/reset/${email}`);
   }
 }
