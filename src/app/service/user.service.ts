@@ -42,5 +42,7 @@ export class UserService {
       // @ts-ignore
       return JSON.parse(localStorage.getItem('users'));
     }
+    // @ts-ignore
+    return null;
   }
 }
