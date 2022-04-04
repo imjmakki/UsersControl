@@ -11,4 +11,8 @@ export class UserService {
   private host = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
+
+  public getUsers(): Observable<User[] | HttpErrorResponse> {
+    return this.http.get<User[]>(`${this.host}/user/all`);
+  }
 }
