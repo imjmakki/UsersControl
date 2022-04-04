@@ -86,7 +86,7 @@ public class UserAPI extends ExceptionHandling {
         return new ResponseEntity<>(user, OK);
     }
 
-    @GetMapping("/users")
+    @GetMapping("/all")
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = userService.getUsers();
         return new ResponseEntity<>(users, OK);
