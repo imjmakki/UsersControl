@@ -43,4 +43,7 @@ export class UserService {
     // @ts-ignore
     return null;
   }
+
+  public createUserFormData(): FormData {
+  }
 }
