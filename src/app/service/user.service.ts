@@ -47,5 +47,11 @@ export class UserService {
   public createUserFormData(loggedInUsername: string, user: User): FormData {
     const formData = new FormData();
     formData.append('currentUsername', loggedInUsername);
+    formData.append('username', user.username);
+    formData.append('email', user.email);
+    formData.append('role', user.role);
+    formData.append('isActive', JSON.stringify(user.active));
+    formData.append('isNonLocked', JSON.stringify(user.notLocked));
+    return formData;
   }
 }
