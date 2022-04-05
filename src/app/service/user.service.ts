@@ -44,6 +44,7 @@ export class UserService {
     return null;
   }
 
-  public createUserFormData(): FormData {
+  public createUserFormData(loggedInUsername: string, user: User): FormData {
+    const formData = new FormData();
   }
 }
