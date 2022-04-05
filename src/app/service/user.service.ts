@@ -46,5 +46,6 @@ export class UserService {
 
   public createUserFormData(loggedInUsername: string, user: User): FormData {
     const formData = new FormData();
+    formData.append('currentUsername', loggedInUsername);
   }
 }
