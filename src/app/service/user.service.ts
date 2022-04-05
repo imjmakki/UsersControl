@@ -23,8 +23,8 @@ export class UserService {
     return this.http.put<User>(`${this.host}/user/update`, formData);
   }
 
-  public resetPassword(email: string): Observable<any | HttpErrorResponse> {
-    return this.http.get(`${this.host}/user/reset/${email}`);
+  public resetPassword(email: string): Observable<CustomHttpResponse | HttpErrorResponse> {
+    return this.http.get<CustomHttpResponse>(`${this.host}/user/reset/${email}`);
   }
 
   public deleteUser(username: string): Observable<CustomHttpResponse | HttpErrorResponse> {
