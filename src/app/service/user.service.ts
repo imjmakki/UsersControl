@@ -3,6 +3,7 @@ import {HttpClient, HttpErrorResponse, HttpResponse} from "@angular/common/http"
 import { environment } from "../../environments/environment";
 import {Observable} from "rxjs";
 import {User} from "../model/user";
+import {CustomHttpResponse} from "../model/custom-http-response";
 
 @Injectable({providedIn: 'root'})
 export class UserService {
@@ -26,8 +27,8 @@ export class UserService {
     return this.http.get(`${this.host}/user/reset/${email}`);
   }
 
-  public deleteUser(username: string): Observable<any | HttpErrorResponse> {
-    return this.http.delete<any>(`${this.host}/user/delete/${username}`);
+  public deleteUser(username: string): Observable<CustomHttpResponse | HttpErrorResponse> {
+    return this.http.delete<CustomHttpResponse>(`${this.host}/user/delete/${username}`);
   }
 
   public addUsersToLocalCache(users: User[]): void {
