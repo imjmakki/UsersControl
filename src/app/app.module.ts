@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {AuthenticationService} from "./service/authentication.service";
 import {UserService} from "./service/user.service";
 import {AuthInterceptor} from "./interceptor/auth.interceptor";
+import {AuthenticationGuard} from "./guard/authentication.guard";
 //Material
 
 @NgModule({
@@ -37,7 +38,7 @@ import {AuthInterceptor} from "./interceptor/auth.interceptor";
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [AuthenticationService, UserService,
+  providers: [AuthenticationGuard ,AuthenticationService, UserService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
