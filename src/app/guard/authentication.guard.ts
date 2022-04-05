@@ -13,9 +13,11 @@ export class AuthenticationGuard implements CanActivate {
     return true;
   }
 
+  // @ts-ignore
   private isUserLoggedIn(): boolean {
     if (this.authenticationService.isLoggedIn()) {
       return true;
     }
+    this.router.navigate(['/login']);
   }
 }
