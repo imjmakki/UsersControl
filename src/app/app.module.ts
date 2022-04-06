@@ -18,6 +18,7 @@ import {AuthenticationService} from "./service/authentication.service";
 import {UserService} from "./service/user.service";
 import {AuthInterceptor} from "./interceptor/auth.interceptor";
 import {AuthenticationGuard} from "./guard/authentication.guard";
+import {NotificationModule} from "./module/notification.module";
 //Material
 
 @NgModule({
@@ -36,7 +37,8 @@ import {AuthenticationGuard} from "./guard/authentication.guard";
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NotificationModule
   ],
   providers: [AuthenticationGuard ,AuthenticationService, UserService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
